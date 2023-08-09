@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.relax {
+  animation: glowme 9s infinite;  /* animation-name animation-duration animation-iteration-count*/
+  transition: all 0.5s ease-in-out;
+  animation-delay: 3s;
+}
+
+.chill {
+  animation: glowme2 9s infinite;
+  transition: all 0.5s ease-in-out;
+  animation-delay: 5s;
+}
+
+.code {
+  animation: glowme3 9s infinite;
+  transition: all 0.5s ease-in-out;
+  animation-delay: 7s;
+}
+
+@keyframes glowme {
+  0% {
+    background: linear-gradient(to right, #e8469f, #9969ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255)
+  }
+}
+
+@keyframes glowme2 {
+  0% {
+    background: linear-gradient(to right, #779f72, #184691);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+}
+
+@keyframes glowme3 {
+  0% {
+    background: linear-gradient(to right, #d1511a, #7016de);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+}
+
+.dot {
+  color: white;  
+}
