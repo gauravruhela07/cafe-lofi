@@ -57,8 +57,8 @@ const Navbar = () => {
  
 
   return (    
-        <nav className="w-full h-[60px] flex items-center py-5 fixed top-0">
-            <div className="w-full h-[60px] flex justify-between items-center">
+        <nav className="w-full h-[60px] flex items-center py-5 top-0">
+            <div className="w-full flex justify-between items-center">
                 <div className="flex justify-between items-center">
                     <Link
                         to="/"
@@ -96,7 +96,7 @@ const Navbar = () => {
                         </div>
                     )}
                 </div>
-                <div className='flex'>        
+                <div className='flex flex-row'>        
                     <div>
                         <a href='https://www.linkedin.com/in/gaurav-ruhela-3419a8153/' target='_blank' rel='noreferrer'>
                             <FaLinkedinIn 
