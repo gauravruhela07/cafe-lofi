@@ -28,18 +28,18 @@ const Content = () => {
     }
 
     return (
-        <div className='flex flex-wrap justify-center items-center'>
+        <div className='flex flex-wrap justify-center items-center mt-10'>
             {lofiArray?.map((item, index) => (
                 <div
                     key={item.id}
                     title={item.title}
                     onClick={() => togglePlay(index)}
-                    className={`m-10 flex flex-col justify-center items-center w-[300px] h-[300px]`}
+                    className={`card m-10 flex flex-col justify-center items-center w-[300px] h-[300px] relative`}
                 >
                     <img 
                         src={item.pic}
                         alt="images"
-                        className='w-full h-full object-cover rounded-2xl cursor-pointer'
+                        className='w-full h-full object-cover rounded-2xl cursor-pointer card-img'
                     />
 
                     <audio 
@@ -56,7 +56,7 @@ const Content = () => {
                         min="0"
                         max="1"
                         step="0.01"
-                        className='absolute'
+                        className='card-range absolute'
                         value={volumes[index]}
                         onChange={(e) => changeVolume(index, e.target.value)}
                         onClick={handleVolumeClick}

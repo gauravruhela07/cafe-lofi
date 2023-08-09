@@ -59,3 +59,47 @@
 .dot {
   color: white;  
 }
+
+.card::before {
+  content: attr(title);
+  position: absolute;
+  background-color: rgba(0, 179, 255, 0.338);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s linear;
+  z-index: 10;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card-img {
+  transition: all 0.4s ease;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+}
+
+.card-range {
+  width: 100%;
+  height: 8px;
+  border-radius: 1rem;
+  bottom: 1rem;
+  -webkit-appearance: none;
+  background-color: rgba(123, 87, 231, 0.562);
+  cursor: pointer;
+}
+
+.card-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: rgba(201, 18, 91, 0.725);
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
