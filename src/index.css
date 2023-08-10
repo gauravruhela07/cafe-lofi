@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.home-page {
+  background-color: #1a073e;
+  background: linear-gradient(to right, #4f0f04, #1a073e);
+  /* animation: changeBackgroundColor 3s infinite; */
+  transition: all 5s ease-in-out;
+  animation-delay: 5s;
+}
+
+/* @keyframes changeBackgroundColor {
+  0% {
+    background: linear-gradient(to right, #4f0f04, #1a073e);    
+  }
+  50% {
+    background: linear-gradient(to left, #850358, #2a0471);
+  }
+  100% {
+    background: linear-gradient(to right, #4f0f04, #1a073e);
+  }
+} */
+
 .relax {
   animation: glowme 9s infinite;  /* animation-name animation-duration animation-iteration-count*/
   transition: all 0.5s ease-in-out;

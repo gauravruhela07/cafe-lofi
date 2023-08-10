@@ -9,7 +9,7 @@ const Footer = () => {
         <span className='text-white mr-3'>Build with</span>
         <FaReact className='mr-3 text-[#1900ff]'/>
         <SiTailwindcss className='text-[#3f6de0] mr-3'/>
-        <BsFillCloudArrowUpFill className='mr-3'/>
+        <BsFillCloudArrowUpFill className='mr-3 text-white'/>
         <BsFillHeartFill className='text-[#fa0202] mr-3'/>
         <span className='text-white'>Gaurav Ruhela</span>
     </div>
